@@ -54,16 +54,7 @@ h4 {
   color: #838585;
   font-weight: 700;
 }
-.title-descriptor {
-  color: var(--text-secondary);
-  width: 100%;
-}
-.heading-decorator {
-  color: var(--text-tertiary);
-  font-size: 12px;
-  font-family: "Geist Mono";
-  font-weight: 500;
-}
+
 /* -------------------------------- */
 /* -- Header Navigation styling --  */
 /* -------------------------------- */
@@ -263,6 +254,16 @@ h4 {
   justify-content: center;
   text-indent: 18px;
   gap: 10px;
+}
+.title-descriptor {
+  color: var(--text-secondary);
+  width: 100%;
+}
+.heading-decorator {
+  color: var(--text-tertiary);
+  font-size: 12px;
+  font-family: "Geist Mono";
+  font-weight: 500;
 }
 .feature-grid {
   display: grid;
