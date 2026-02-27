@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mintlify - The Intelligent Documentation Platform</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="static/mintlify-icon.svg">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="nav-bar">
+        <div class="nav-left-content">
+          <svg
+            width="104"
+            height="24"
+            viewBox="0 0 104 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18.4725 9.60528V3.91396C18.4725 3.30323 17.977 2.81641 17.3754 2.81641H11.6867C10.7931 2.81641 9.90842 2.99342 9.08564 3.32977C8.26285 3.67497 7.51085 4.17064 6.88271 4.80793L6.83847 4.85219C6.00684 5.69305 5.41408 6.73749 5.11328 7.88815C5.65296 7.74653 6.2103 7.67572 6.76767 7.66687C8.25399 7.64916 9.71378 8.12713 10.8993 9.02111C11.9698 9.81771 12.7837 10.9153 13.2261 12.181C13.6861 13.4644 13.7392 14.8629 13.3942 16.1817C14.5354 15.8808 15.5883 15.2878 16.4288 14.4558L16.473 14.4115C17.1011 13.7831 17.6054 13.0307 17.9504 12.2075C18.2955 11.3844 18.4636 10.4993 18.4636 9.60528H18.4725Z"
+              fill="#18E299"
+            />
+            <path
+              d="M4.9434 9.50941C4.95221 7.76347 5.64849 6.08807 6.87361 4.83594L2.14058 9.57113C2.12296 9.58876 2.10532 9.59758 2.08769 9.61522C0.933084 10.7615 0.23681 12.2959 0.122231 13.9183C0.0164654 15.435 0.413078 16.934 1.2592 18.1862C1.33991 18.3056 1.5589 18.3449 1.68229 18.2303L4.58202 15.338C5.48985 14.4298 5.7719 13.0806 5.34002 11.8726C5.06679 11.1231 4.93459 10.3207 4.9434 9.50941Z"
+              fill="#0C8C5E"
+            />
+            <path
+              d="M16.4445 14.4121C15.5367 15.3027 14.3997 15.92 13.1658 16.1933C11.923 16.4667 10.6362 16.3873 9.43757 15.9641C9.43757 15.9641 9.42874 15.9641 9.41992 15.9641C8.21243 15.532 6.86394 15.8141 5.95612 16.7136L3.05634 19.6058C2.93295 19.7293 2.95057 19.9321 3.10041 20.0291C4.35197 20.8668 5.85035 21.2724 7.36632 21.1666C8.98806 21.052 10.5128 20.3553 11.6674 19.2002L11.7115 19.1561L16.4445 14.4209V14.4121Z"
+              fill="#0C8C5E"
+            />
+            <path
+              d="M96.2355 23.5H92.6842L95.1868 17.8513L90.1816 6.60156H93.7568L96.6734 13.6537C96.7753 13.9002 97.1246 13.8997 97.2259 13.653L100.12 6.60156H103.719L96.2355 23.5Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M85.4483 18.5186V9.46164H83.041V6.60154H85.4483V5.05232C85.4483 3.63816 85.8773 2.5259 86.7353 1.71554C87.5933 0.90518 88.6818 0.5 90.0006 0.5C90.8109 0.5 91.5021 0.587392 92.0742 0.762175V3.64611C91.6928 3.5031 91.2479 3.4316 90.7394 3.4316C90.0244 3.4316 89.508 3.59049 89.1902 3.90828C88.8724 4.21018 88.7135 4.72659 88.7135 5.4575V6.60154H92.0742V9.46164H88.7135V18.5186H85.4483Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M80.1204 4.64714C79.5643 4.64714 79.0797 4.44852 78.6666 4.05129C78.2534 3.63816 78.0469 3.14559 78.0469 2.57357C78.0469 2.00155 78.2534 1.51692 78.6666 1.11969C79.0797 0.706563 79.5643 0.5 80.1204 0.5C80.7084 0.5 81.2009 0.706563 81.5982 1.11969C82.0113 1.51692 82.2178 2.00155 82.2178 2.57357C82.2178 3.14559 82.0113 3.63816 81.5982 4.05129C81.2009 4.44852 80.7084 4.64714 80.1204 4.64714ZM78.4997 18.5186V6.60154H81.765V18.5186H78.4997Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M72.8125 18.5182V0.642578H76.0778V18.5182H72.8125Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M69.1256 18.6621C67.7909 18.6621 66.6945 18.2966 65.8365 17.5657C64.9943 16.8189 64.5733 15.7464 64.5733 14.3481V9.46211H62.166V6.60201H64.5733V3.28906H67.8385V6.60201H71.1992V9.46211H67.8385V13.7046C67.8385 14.4355 67.9974 14.9598 68.3152 15.2776C68.633 15.5795 69.1494 15.7305 69.8644 15.7305C70.3729 15.7305 70.8178 15.659 71.1992 15.516V18.3999C70.6271 18.5747 69.9359 18.6621 69.1256 18.6621Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M49.9434 18.5191V6.60202H53.2086V7.47307C53.2086 7.62037 53.4091 7.6855 53.5066 7.57513C54.2346 6.75161 55.2713 6.33984 56.6169 6.33984C58.047 6.33984 59.1672 6.81653 59.9775 7.76989C60.8038 8.70737 61.2169 9.96263 61.2169 11.5357V18.5191H57.9516V12.0839C57.9516 11.21 57.7689 10.5347 57.4034 10.058C57.038 9.5654 56.5216 9.31911 55.8542 9.31911C55.0598 9.31911 54.4162 9.60512 53.9237 10.1771C53.447 10.7492 53.2086 11.5913 53.2086 12.7036V18.5191H49.9434Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M45.8783 4.64714C45.3221 4.64714 44.8375 4.44852 44.4244 4.05129C44.0113 3.63816 43.8047 3.14559 43.8047 2.57357C43.8047 2.00155 44.0113 1.51692 44.4244 1.11969C44.8375 0.706563 45.3221 0.5 45.8783 0.5C46.4662 0.5 46.9587 0.706563 47.356 1.11969C47.7691 1.51692 47.9757 2.00155 47.9757 2.57357C47.9757 3.14559 47.7691 3.63816 47.356 4.05129C46.9587 4.44852 46.4662 4.64714 45.8783 4.64714ZM44.2575 18.5186V6.60154H47.5228V18.5186H44.2575Z"
+              fill="#ffffff"
+            />
+            <path
+              d="M38.7147 18.5191V12.1554C38.7147 10.2645 38.095 9.31911 36.8557 9.31911C36.1406 9.31911 35.5686 9.58923 35.1396 10.1295C34.7265 10.6697 34.504 11.4721 34.4722 12.5367V18.5191H31.207V12.1554C31.207 10.2645 30.5873 9.31911 29.3479 9.31911C28.617 9.31911 28.037 9.60512 27.608 10.1771C27.179 10.7492 26.9645 11.5913 26.9645 12.7036V18.5191H23.6992V6.60202H26.9645V7.48165C26.9645 7.62818 27.1615 7.69271 27.2578 7.58222C27.9791 6.75397 28.938 6.33984 30.1344 6.33984C31.7067 6.33984 32.8909 6.98895 33.687 8.28717C33.7498 8.38958 33.9044 8.38799 33.9668 8.28535C34.311 7.71964 34.7893 7.26975 35.4018 6.9357C36.1009 6.53846 36.808 6.33984 37.523 6.33984C38.9372 6.33984 40.0335 6.80858 40.8121 7.74606C41.5907 8.68353 41.98 9.97058 41.98 11.6072V18.5191H38.7147Z"
+              fill="#ffffff"
+            />
+          </svg>
+        </div>
+        <ul class="nav-center-content">
+          <li><a href="">Resources</a></li>
+          <li><a href="">Documentation</a></li>
+          <li><a href="">Customers</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Pricing</a></li>
+        </ul>
+        <ul class="nav-right-content">
+          <li>
+            <a
+              href=""
+              class="nav-right-links"
+              style="text-decoration: none; color: #ffffff"
+            >
+              Contact sales
+            </a>
+          </li>
+          <li>
+            <a
+              href=""
+              class="nav-right-links btn-primary-filled"
+              id="nav-btn-start"
+            >
+              Start for free
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="hero-section">
+        <h1>
+          The Intelligent <br />
+          Knowledge Platform
+        </h1>
+        <p>
+          Helping teams create and maintain world-class <br />
+          documentation built for both humans and AI
+        </p>
+        <div class="start-cta-container">
+          <p>Email address</p>
+          <a class="btn-primary-filled" id="start-cta-submit" href="">
+            Start now
+          </a>
+        </div>
+        <img
+          src="static/hero-image-dark.svg"
+          alt="hero-image"
+          class="hero-img"
+        />
+        <img src="static/logo-garden.png" alt="" />
+      </section>
+      <section class="feature-section">
+        <header>
+          <h2>Built for the intelligence age</h2>
+          <p class="title-descriptor">
+            Integrate AI into every part of your docs lifecycle. Woven into how
+            your <br />
+            knowledge is written, maintained, and understood by both users and
+            LLMs.
+          </p>
+        </header>
+        <div class="feature-grid">
+          <article class="feature-card" id="fcard-1">
+            <header>
+              <p class="heading-decorator">LLMs.TXT & MCP</p>
+              <h3>Built for both people and AI</h3>
+            </header>
+            <p>
+              Ensure your product shows up in the AI <br />
+              workflows users already rely on. We support <br />
+              llms.txt, MCP, and whatever comes next.
+            </p>
+            <video
+              class="feature-clips"
+              playsinline="true"
+              autoplay="true"
+              loop="true"
+            >
+              <source src="clips/feature1-clip.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article class="feature-card" id="fcard-2">
+            <header>
+              <p class="heading-decorator">AGENT</p>
+              <h3>Self-updating knowledge management</h3>
+            </header>
+            <p>
+              Draft, edit, and maintain content with a <br />
+              context-aware agent. Move faster and more <br />
+              consistently without the documentation debt.
+            </p>
+            <video
+              class="feature-clips"
+              autoplay="true"
+              playsinline="true"
+              loop="true"
+            >
+              <source src="clips/feature2-clip.mp4" type="video/mp4" />
+            </video>
+          </article>
+          <article class="feature-card" id="fcard-3">
+            <header>
+              <p class="heading-decorator">ASSISTANT</p>
+              <h3>Intelligent assistance for your users</h3>
+            </header>
+            <p>
+              Turn every documentation visit into a guided conversation. Your
+              <br />
+              AI assistant understands context and delivers what users need.
+            </p>
+            <video
+              class="feature-clips"
+              playsinline="true"
+              autoplay="true"
+              loop="true"
+            >
+              <source src="clips/feature3-clip.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
+      </section>
+      <section class="enterprise-section">
+        <div class="enterprise-grid">
+          <header>
+            <div>
+              <p class="heading-decorator">ENTERPRISE-REINVENTION</p>
+              <h2>
+                Bring intelligence to <br />
+                enterprise knowledge
+              </h2>
+              <p class="title-descriptor">
+                Modernize without the rebuild with enterprise-grade professional
+                service & security.
+              </p>
+            </div>
+            <a class="btn-primary-filled" href=""> Explore for enterprise</a>
+          </header>
+          <article class="enterprise-card">
+            <img src="static/icon3.png" alt="" />
+            <div class="enterprise-card-text">
+              <h3>Build with partnership</h3>
+              <p>
+                Direct, white-glove access to our documentation experts.
+                Dedicated migration support and guidance tailored to your setup,
+                and elevated support SLAs.
+              </p>
+            </div>
+          </article>
+          <article class="enterprise-card">
+            <img src="static/icon4.png" alt="" />
+            <div class="enterprise-card-text">
+              <h3>Compliance and access control</h3>
+              <p>
+                Compliant with SOC 2, and in the process for ISO/27001 and GDPR
+                compliance to meet your internal and external data requirements.
+                Secure access and provisioning with SAML-based SSO.
+              </p>
+            </div>
+          </article>
+          <div class="enterprise-card">
+            <div class="customer-story-heading">
+              <p class="heading-decorator">CUSTOMER STORY</p>
+              <h3>
+                See how Anthropic accelerates <br />
+                Ai development with Mintlify
+              </h3>
+              <a href=""> Read story > </a>
+            </div>
+            <div class="customer-story-metrics">
+              <div>
+                <p>2M+</p>
+                <p>Monthly active developers</p>
+              </div>
+              <div>
+                <p>3+</p>
+                <p>
+                  Products serviced: Claude <br />
+                  API, MCP, and Claude Code
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="enterprise-logo-garden">
+            <img src="static\enterprise-logo-garden.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="customer-section">
+        <header>
+          <p class="heading-decorator">CUSTOMERS</p>
+          <h2>Unlock knowledge for any industry</h2>
+          <p class="title-descriptor">
+            From frontier AI companies to consumer brands, leaders across
+            industries scale <br />with Mintlify.
+          </p>
+        </header>
+        <div class="customer-carousel">
+          <a href="" class="customer-carousel-card">
+            <div class="customer-carousel-card-img carousel-img-1">
+              <img
+                class="carousel-img-logo"
+                src="static/perplexityWhite.png"
+                alt=""
+              />
+            </div>
+            <p>
+              How Perplexity transformed its documentation into an AI-native
+              developer experience that matches the pace of its product
+              development
+            </p>
+            <p class="link-btn-gray">Read story ></p>
+          </a>
+          <a href="" class="customer-carousel-card">
+            <div class="customer-carousel-card-img carousel-img-2">
+              <img class="carousel-img-logo" src="static/xlogo.svg" alt="" />
+            </div>
+            <p>
+              X is using Mintlify to power the developer experience for the
+              global town square
+            </p>
+            <p class="link-btn-gray">Read story ></p>
+          </a>
+          <a href="" class="customer-carousel-card">
+            <div class="customer-carousel-card-img carousel-img-3">
+              <img class="carousel-img-logo" src="static/Kalshi.svg" alt="" />
+            </div>
+            <p>
+              How Kalshi helps developers discover what's possible faster and
+              ultimately drive broader adoption of its prediction markets
+            </p>
+            <p class="link-btn-gray">Read story ></p>
+          </a>
+          <a href="" class="customer-carousel-card">
+            <div class="customer-carousel-card-img carousel-img-4">
+              <img
+                class="carousel-img-logo"
+                src="static/cognition.png"
+                alt=""
+              />
+            </div>
+            <p>
+              How Cognition scaled their documentation to mirror their product
+              ethos
+            </p>
+            <p class="link-btn-gray">Read story ></p>
+          </a>
+          <a href="" class="customer-carousel-card">
+            <div class="customer-carousel-card-img carousel-img-5">
+              <img
+                class="carousel-img-logo"
+                src="static/together-brand-color.png"
+                alt=""
+              />
+            </div>
+            <p>
+              How Together AI scaled their documentation into a developer
+              experience that mirrors their own ethos
+            </p>
+            <p class="link-btn-gray">Read story ></p>
+          </a>
+          <a href="" class="customer-carousel-card">
+            <div class="customer-carousel-card-img carousel-img-6">
+              <img
+                class="carousel-img-logo"
+                src="static/laravel.avif"
+                alt=""
+                style="width: 250px; height: 120px"
+              />
+            </div>
+            <p>
+              How Laravel scaled world-class documentation across 10+ products
+            </p>
+            <p class="link-btn-gray">Read story ></p>
+          </a>
+          <a href="" class="customer-carousel-card">
+            <div class="customer-carousel-card-img carousel-img-7">
+              <img
+                class="carousel-img-logo"
+                src="static/replit-original-wordmark.png"
+                alt=""
+              />
+            </div>
+            <p>
+              Learn how Replit uses Mintlify to turn documentation into a fast,
+              collaborative, and accessible workflow that scales beyond
+              engineers while staying fully version controlled.
+            </p>
+            <p class="link-btn-gray">Read story ></p>
+          </a>
+        </div>
+      </section>
+      <section class="end-cta-section">
+        <header>
+          <h2>Make documentation <br />your winning advantage</h2>
+          <p>
+            Join the leaders of tomorrow to future proof your documentation
+            today.
+          </p>
+          <div class="end-cta-btns">
+            <a class="btn-primary-filled end-cta-btn-fill" href="">
+              Get started for free
+            </a>
+            <a class="btn-primary-nofill end-cta-btn-nofill" href="">
+              Get a demo
+            </a>
+          </div>
+        </header>
+        <div class="getstarted-grid">
+          <div class="getstarted-card">
+            <img src="static/icon1.png" alt="" />
+            <h3>Pricing on your terms</h3>
+            <p>Pick the plan that works best for you</p>
+            <a class="link-btn-green" href=""> Pricing details ></a>
+          </div>
+          <div class="getstarted-card">
+            <img src="static/icon2.png" alt="" />
+            <h3>Start building</h3>
+            <p>Deploy your documentation in minutes</p>
+            <a class="link-btn-green" href=""> Quickstart ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="footer-grid">
+        <div>
+          <a href="">
+            <svg
+              width="104"
+              height="24"
+              viewBox="0 0 104 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.4725 9.60528V3.91396C18.4725 3.30323 17.977 2.81641 17.3754 2.81641H11.6867C10.7931 2.81641 9.90842 2.99342 9.08564 3.32977C8.26285 3.67497 7.51085 4.17064 6.88271 4.80793L6.83847 4.85219C6.00684 5.69305 5.41408 6.73749 5.11328 7.88815C5.65296 7.74653 6.2103 7.67572 6.76767 7.66687C8.25399 7.64916 9.71378 8.12713 10.8993 9.02111C11.9698 9.81771 12.7837 10.9153 13.2261 12.181C13.6861 13.4644 13.7392 14.8629 13.3942 16.1817C14.5354 15.8808 15.5883 15.2878 16.4288 14.4558L16.473 14.4115C17.1011 13.7831 17.6054 13.0307 17.9504 12.2075C18.2955 11.3844 18.4636 10.4993 18.4636 9.60528H18.4725Z"
+                fill="#18E299"
+              />
+              <path
+                d="M4.9434 9.50941C4.95221 7.76347 5.64849 6.08807 6.87361 4.83594L2.14058 9.57113C2.12296 9.58876 2.10532 9.59758 2.08769 9.61522C0.933084 10.7615 0.23681 12.2959 0.122231 13.9183C0.0164654 15.435 0.413078 16.934 1.2592 18.1862C1.33991 18.3056 1.5589 18.3449 1.68229 18.2303L4.58202 15.338C5.48985 14.4298 5.7719 13.0806 5.34002 11.8726C5.06679 11.1231 4.93459 10.3207 4.9434 9.50941Z"
+                fill="#0C8C5E"
+              />
+              <path
+                d="M16.4445 14.4121C15.5367 15.3027 14.3997 15.92 13.1658 16.1933C11.923 16.4667 10.6362 16.3873 9.43757 15.9641C9.43757 15.9641 9.42874 15.9641 9.41992 15.9641C8.21243 15.532 6.86394 15.8141 5.95612 16.7136L3.05634 19.6058C2.93295 19.7293 2.95057 19.9321 3.10041 20.0291C4.35197 20.8668 5.85035 21.2724 7.36632 21.1666C8.98806 21.052 10.5128 20.3553 11.6674 19.2002L11.7115 19.1561L16.4445 14.4209V14.4121Z"
+                fill="#0C8C5E"
+              />
+              <path
+                d="M96.2355 23.5H92.6842L95.1868 17.8513L90.1816 6.60156H93.7568L96.6734 13.6537C96.7753 13.9002 97.1246 13.8997 97.2259 13.653L100.12 6.60156H103.719L96.2355 23.5Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M85.4483 18.5186V9.46164H83.041V6.60154H85.4483V5.05232C85.4483 3.63816 85.8773 2.5259 86.7353 1.71554C87.5933 0.90518 88.6818 0.5 90.0006 0.5C90.8109 0.5 91.5021 0.587392 92.0742 0.762175V3.64611C91.6928 3.5031 91.2479 3.4316 90.7394 3.4316C90.0244 3.4316 89.508 3.59049 89.1902 3.90828C88.8724 4.21018 88.7135 4.72659 88.7135 5.4575V6.60154H92.0742V9.46164H88.7135V18.5186H85.4483Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M80.1204 4.64714C79.5643 4.64714 79.0797 4.44852 78.6666 4.05129C78.2534 3.63816 78.0469 3.14559 78.0469 2.57357C78.0469 2.00155 78.2534 1.51692 78.6666 1.11969C79.0797 0.706563 79.5643 0.5 80.1204 0.5C80.7084 0.5 81.2009 0.706563 81.5982 1.11969C82.0113 1.51692 82.2178 2.00155 82.2178 2.57357C82.2178 3.14559 82.0113 3.63816 81.5982 4.05129C81.2009 4.44852 80.7084 4.64714 80.1204 4.64714ZM78.4997 18.5186V6.60154H81.765V18.5186H78.4997Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M72.8125 18.5182V0.642578H76.0778V18.5182H72.8125Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M69.1256 18.6621C67.7909 18.6621 66.6945 18.2966 65.8365 17.5657C64.9943 16.8189 64.5733 15.7464 64.5733 14.3481V9.46211H62.166V6.60201H64.5733V3.28906H67.8385V6.60201H71.1992V9.46211H67.8385V13.7046C67.8385 14.4355 67.9974 14.9598 68.3152 15.2776C68.633 15.5795 69.1494 15.7305 69.8644 15.7305C70.3729 15.7305 70.8178 15.659 71.1992 15.516V18.3999C70.6271 18.5747 69.9359 18.6621 69.1256 18.6621Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M49.9434 18.5191V6.60202H53.2086V7.47307C53.2086 7.62037 53.4091 7.6855 53.5066 7.57513C54.2346 6.75161 55.2713 6.33984 56.6169 6.33984C58.047 6.33984 59.1672 6.81653 59.9775 7.76989C60.8038 8.70737 61.2169 9.96263 61.2169 11.5357V18.5191H57.9516V12.0839C57.9516 11.21 57.7689 10.5347 57.4034 10.058C57.038 9.5654 56.5216 9.31911 55.8542 9.31911C55.0598 9.31911 54.4162 9.60512 53.9237 10.1771C53.447 10.7492 53.2086 11.5913 53.2086 12.7036V18.5191H49.9434Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M45.8783 4.64714C45.3221 4.64714 44.8375 4.44852 44.4244 4.05129C44.0113 3.63816 43.8047 3.14559 43.8047 2.57357C43.8047 2.00155 44.0113 1.51692 44.4244 1.11969C44.8375 0.706563 45.3221 0.5 45.8783 0.5C46.4662 0.5 46.9587 0.706563 47.356 1.11969C47.7691 1.51692 47.9757 2.00155 47.9757 2.57357C47.9757 3.14559 47.7691 3.63816 47.356 4.05129C46.9587 4.44852 46.4662 4.64714 45.8783 4.64714ZM44.2575 18.5186V6.60154H47.5228V18.5186H44.2575Z"
+                fill="#ffffff"
+              />
+              <path
+                d="M38.7147 18.5191V12.1554C38.7147 10.2645 38.095 9.31911 36.8557 9.31911C36.1406 9.31911 35.5686 9.58923 35.1396 10.1295C34.7265 10.6697 34.504 11.4721 34.4722 12.5367V18.5191H31.207V12.1554C31.207 10.2645 30.5873 9.31911 29.3479 9.31911C28.617 9.31911 28.037 9.60512 27.608 10.1771C27.179 10.7492 26.9645 11.5913 26.9645 12.7036V18.5191H23.6992V6.60202H26.9645V7.48165C26.9645 7.62818 27.1615 7.69271 27.2578 7.58222C27.9791 6.75397 28.938 6.33984 30.1344 6.33984C31.7067 6.33984 32.8909 6.98895 33.687 8.28717C33.7498 8.38958 33.9044 8.38799 33.9668 8.28535C34.311 7.71964 34.7893 7.26975 35.4018 6.9357C36.1009 6.53846 36.808 6.33984 37.523 6.33984C38.9372 6.33984 40.0335 6.80858 40.8121 7.74606C41.5907 8.68353 41.98 9.97058 41.98 11.6072V18.5191H38.7147Z"
+                fill="#ffffff"
+              />
+            </svg>
+          </a>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com">
+              <svg
+                width="21"
+                height="20"
+                viewBox="0 0 21 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.4595 11.5714V18.889H8.06641V6.24428H11.2672L11.3238 9.39982H11.1202C11.452 8.3442 11.9534 7.52987 12.6244 6.95682C13.3031 6.37623 14.1777 6.08594 15.2484 6.08594C16.1231 6.08594 16.8846 6.27821 17.5331 6.66275C18.189 7.03976 18.6942 7.58642 19.0486 8.30273C19.4105 9.0115 19.5915 9.85977 19.5915 10.8475V18.889H16.1985V11.4356C16.1985 10.6515 15.9949 10.0369 15.5877 9.59209C15.1881 9.14722 14.6301 8.92479 13.9138 8.92479C13.4388 8.92479 13.0128 9.03035 12.6358 9.24148C12.2663 9.44506 11.976 9.74289 11.7649 10.135C11.5613 10.5271 11.4595 11.0059 11.4595 11.5714Z"
+                  fill="#676767"
+                ></path>
+                <path
+                  d="M1.77748 18.889V6.2442H5.17054V18.889H1.77748ZM3.47401 4.59292C2.96128 4.59292 2.52395 4.42326 2.16203 4.08396C1.8001 3.74465 1.61914 3.33372 1.61914 2.85115C1.61914 2.36858 1.8001 1.95765 2.16203 1.61834C2.52395 1.27903 2.96128 1.10938 3.47401 1.10938C3.98674 1.10938 4.42406 1.27903 4.78599 1.61834C5.15546 1.9501 5.34019 2.36104 5.34019 2.85115C5.34019 3.33372 5.15546 3.74465 4.78599 4.08396C4.42406 4.42326 3.98674 4.59292 3.47401 4.59292Z"
+                  fill="#676767"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.x.com">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.1188 8.75562L18.0382 1.875H16.6357L11.4957 7.84938L7.39062 1.875H2.65625L8.86375 10.9094L2.65625 18.125H4.05875L9.48625 11.8156L13.8213 18.125H18.5563L12.1188 8.75562ZM10.1975 10.9888L9.56875 10.0894L4.56437 2.93125H6.71875L10.7575 8.70812L11.3863 9.6075L16.6363 17.1169H14.4819L10.1975 10.9888Z"
+                  fill="#676767"
+                ></path>
+              </svg>
+            </a>
+            <a href="https://www.github.com">
+              <svg
+                width="22"
+                height="20"
+                viewBox="0 0 22 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.6055 1.46484C15.4399 1.46484 19.3555 5.38046 19.3555 10.2149C19.3543 13.9742 16.9561 17.3142 13.3949 18.5161C12.9574 18.6036 12.793 18.3299 12.793 18.1005C12.793 17.8049 12.8043 16.8642 12.8043 15.6942C12.8043 14.8742 12.5311 14.3492 12.2136 14.0755C14.1605 13.8567 16.2061 13.113 16.2061 9.75546C16.2061 8.79296 15.8668 8.01609 15.3093 7.40421C15.3968 7.18546 15.703 6.28859 15.2218 5.08546C15.2218 5.08546 14.4886 4.84484 12.8155 5.98234C12.1155 5.78546 11.3718 5.68734 10.628 5.68734C9.88422 5.68734 9.14047 5.78546 8.44047 5.98234C6.76735 4.85609 6.03422 5.08546 6.03422 5.08546C5.55297 6.28859 5.85922 7.18546 5.94672 7.40421C5.38922 8.01671 5.04985 8.80421 5.04985 9.75546C5.04985 13.1024 7.08422 13.8574 9.0311 14.0761C8.77922 14.2949 8.54985 14.678 8.47297 15.2461C7.96985 15.4761 6.71172 15.848 5.92485 14.5242C5.76047 14.2617 5.2686 13.6167 4.57985 13.6274C3.84672 13.6386 4.28485 14.043 4.59047 14.2067C4.96235 14.4142 5.3886 15.1911 5.48735 15.443C5.66235 15.9349 6.2311 16.8761 8.42922 16.4711C8.42922 17.2042 8.44047 17.893 8.44047 18.1005C8.44047 18.3305 8.2761 18.5924 7.8386 18.5161C4.26422 17.3261 1.8536 13.9817 1.85547 10.2142C1.85547 5.37984 5.7711 1.46484 10.6055 1.46484Z"
+                  fill="#676767"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-nav-ul">
+            <li>
+              <h4>EXPLORE</h4>
+            </li>
+            <li>
+              <a href="">Startups</a>
+            </li>
+            <li>
+              <a href="">Enterprise</a>
+            </li>
+
+            <li>
+              <a href="">Switch</a>
+            </li>
+            <li>
+              <a href="">OSS Program</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-ul">
+            <li>
+              <h4>RESOURCES</h4>
+            </li>
+            <li>
+              <a href="">Customers</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Pricing</a>
+            </li>
+            <li>
+              <a href="">Guides</a>
+            </li>
+            <li>
+              <a href="">Feature Requests</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-ul">
+            <li>
+              <h4>DOCUMENTATION</h4>
+            </li>
+            <li>
+              <a href="">Getting Started</a>
+            </li>
+            <li>
+              <a href="">API Reference</a>
+            </li>
+            <li>
+              <a href="">Components</a>
+            </li>
+            <li>
+              <a href="">Changelog</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-ul">
+            <li>
+              <h4>COMPANY</h4>
+            </li>
+            <li>
+              <a href="">Careers </a>
+            </li>
+            <li>
+              <a href="">Wall of Love</a>
+            </li>
+          </ul>
+          <ul class="footer-nav-ul">
+            <li>
+              <h4>LEGAL</h4>
+            </li>
+            <li>
+              <a href="">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="">Responsible Disclosure</a>
+            </li>
+            <li>
+              <a href=""> Terms Of Service</a>
+            </li>
+            <li>
+              <a href=""> Security</a>
+            </li>
+            <li>
+              <a href="">DSR/DSAR</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-end">
+          <a class="status-label-gray" href="" style="width: 150px">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.00001 15.352C4.89601 15.352 4.79101 15.331 4.69001 15.285C1.84101 13.988 0.00100708 11.129 0.00100708 8C0.00100708 4.871 1.84101 2.012 4.68901 0.715004C5.06601 0.543004 5.51001 0.710004 5.68201 1.087C5.85301 1.464 5.68701 1.909 5.31001 2.08C2.99501 3.134 1.49901 5.457 1.49901 7.999C1.49901 10.541 2.99501 12.865 5.31001 13.918C5.68701 14.089 5.85301 14.534 5.68201 14.911C5.55601 15.187 5.28401 15.35 4.99901 15.35L5.00001 15.352Z"
+                fill="#18E299"
+              ></path>
+              <path
+                d="M11 15.352C10.715 15.352 10.443 15.189 10.317 14.913C10.146 14.536 10.312 14.091 10.689 13.92C13.004 12.866 14.5 10.543 14.5 8.00101C14.5 5.45901 13.004 3.13501 10.689 2.08201C10.312 1.91101 10.146 1.46601 10.317 1.08901C10.49 0.713011 10.935 0.546011 11.31 0.717011C14.159 2.01401 15.999 4.87301 15.999 8.00201C15.999 11.131 14.158 13.99 11.31 15.287C11.209 15.333 11.104 15.354 11 15.354V15.352Z"
+                fill="#18E299"
+              ></path>
+              <path
+                d="M8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12Z"
+                fill="#18E299"
+              ></path>
+            </svg>
+            <small> All systems normal </small>
+          </a>
+          <small> © 2026 Mintlify, Inc.</small>
+          <div class="status-label-gray" style="height: 16px;">
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="12px" fill="#909090">
+                    <path d="M288-144v-48l48-48H168q-29.7 0-50.85-21.15Q96-282.3 96-312v-432q0-29.7 21.15-50.85Q138.3-816 168-816h624q29.7 0 50.85 21.15Q864-773.7 864-744v432q0 29.7-21.15 50.85Q821.7-240 792-240H624l48 48v48H288ZM168-312h624v-432H168v432Zm0 0v-432 432Z"/>
+              </div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="12px" fill="#909090"><path d="M444-768v-144h72v144h-72Zm265 112-54-52 104-102 52 50-102 104Zm59 212v-72h144v72H768ZM444-48v-144h72v144h-72ZM251-658 147-760l54-50 101 101-51 51Zm509 511L659-252l50-50 104 100-53 55ZM48-444v-72h144v72H48Zm152 297-51-53 102-100 25 24 24 25-100 104Zm110-163q-70-70-70-170t70-170q70-70 170-70t170 70q70 70 70 170t-70 170q-70 70-170 70t-170-70Zm289-51q49-49 49-119t-49-119q-49-49-119-49t-119 49q-49 49-49 119t49 119q49 49 119 49t119-49ZM480-480Z"/> 
+      
+              </div>
+              <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="12px" fill="#909090"><path d="M483.11-96q-80.49 0-150.92-30.66-70.42-30.66-122.65-82.88-52.22-52.23-82.88-122.65Q96-402.62 96-483.11 96-623 184-730.5T412-864q-17 99 11.5 188T521-518q67 67 158 95t185 11q-24 138-132.5 227T483.11-96Zm-.11-72q88 0 164-45t115-122q-83-5-158.5-39.5T469-468q-60-60-94-135t-40-159q-77 41-122 116.18-45 75.19-45 162.82 0 131.25 91.88 223.12Q351.75-168 483-168Zm-14-300Z"/>
+              </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
