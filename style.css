@@ -244,9 +244,9 @@ h4 {
   /* border: 1px solid red; */
   gap: 80px;
 }
-.feature-section p {
+/* .feature-section p {
   color: var(--text-secondary);
-}
+} */
 .feature-section > header {
   display: flex;
   flex-direction: column;
